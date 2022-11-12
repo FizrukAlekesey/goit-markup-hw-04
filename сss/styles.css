@@ -185,7 +185,7 @@ img {
     width:270px;
     height: 74px;
 }
-.list-item ::before {
+.list-item::before {
     display:block ;
     content: "";
     width: 270px;
@@ -194,18 +194,19 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
+    margin-bottom: 30px;
     
 }
-.icon-antenna ::before{
+.icon-antenna::before{
     background-image: url(../imeges/antenna.svg);
 }
-.icon-clock ::before{
+.icon-clock::before{
     background-image: url(../imeges/clock.svg);
 }
-.icon-diagram ::before{
+.icon-diagram::before{
     background-image: url(../imeges/diagram.svg) ;
 }
-.icon-astronaut ::before{
+.icon-astronaut::before{
     background-image: url(../imeges/astronaut.svg);
 }
 
@@ -336,9 +337,6 @@ img {
 .button-icon{
     width: 100px;
     height: 100px;
-    background-color: aqua;
-    
-    
 }
 /*button*/
 .button {
