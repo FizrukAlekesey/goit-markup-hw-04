@@ -312,32 +312,27 @@ img {
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
 }
-/* .team-networks {
-    display: inline-block;
+
+.team-link{
+    padding: 0;
+    background: none;
     width: 44px;
     height: 44px;
-    background-repeat: no-repeat;
-    background-position: center;
+    color:#AFB1B8;
     border-radius: 50%;
-    margin:0 auto;
-} */
-/* .icon-instagram {
-    background-image: url(../imeges/instagram.svg);
+    background-color: #FFFFFF ;
 }
-.icon-twitter {
-    background-image: url(../imeges/group.svg);
+.team-link:hover {
+    color:#FFFFFF;
+    background-color: #188CE8;
 }
-.icon-facebook {
-    background-image: url(../imeges/facebook.svg);
+.team-icon{
+    fill: currentColor;
 }
-.icon-linkedin {
-    background-image: url(../imeges/linkedin.svg);
-}  */
+/* .team-icon:hover{
+    fill: #FFFFFF;
+    background-color: #188CE8; */
 
-.button-icon{
-    width: 100px;
-    height: 100px;
-}
 /*button*/
 .button {
     background-color: #188CE8;
