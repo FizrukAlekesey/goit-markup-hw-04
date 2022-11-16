@@ -106,20 +106,24 @@ img {
     display: flex;
     margin-left: auto;
 }
-.contact .tel::before {
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(../imeges/vector.svg);
-    background-size: contain;
-}
-.contact .mail::before {
+.contact-icon {
     content: "";
     width: 16px;
-    height: 12px;
+    height: 16px;
     margin-right: 10px;
-    background-image: url(../imeges/envelope.svg);
+    background-size: contain; 
+    fill: currentColor;
+}
+.contact .tel {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.contact .mail{
+    content: "";
+    width: 100%;
+    height: 100%;
     background-size: contain;
 }
 
@@ -134,8 +138,12 @@ img {
     letter-spacing: 0.02em;
 }
 .contact :hover,
-.contact :focus{
+.contact :focus {
     color: #2196F3;
+}
+.contact .mail:hover ,
+.contact .mail:focus  {
+    fill: currentColor;
 }
 
 /*fondament*/
@@ -297,6 +305,7 @@ img {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 
 .tima-foto{
@@ -308,15 +317,14 @@ img {
 }
 .team-heading{
     padding:30px 16px;
-    /* border-bottom:1px solid #eee;  */
+    border-bottom:1px solid #eee; 
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
 }
 .icon-list{
     display: flex;
     list-style:none;
-    padding-bottom: 30px;
-    padding-left: 32px;
+    margin-left: 16px;
     gap: 10px;
 }
 .team-options{
@@ -476,9 +484,9 @@ p {
     width: calc((100% - 60px) / 3);
 }
 
-.title{
+.portfolio-foto .title{
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2.0;
 }
 /* card */
@@ -488,7 +496,10 @@ p {
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
 }
-
+.portfolio-foto .item:hover,
+.portfolio-foto .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio .list .title {
     font-weight: 700;
@@ -545,7 +556,7 @@ a {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    margin-left: 35px;
+    margin-left: 20px;
 }
 .footer .container{
     display: flex;
@@ -573,7 +584,7 @@ a {
     height: 100%;
     padding: 0;
     border: none;
-    color:#AFB1B8;
+    color:#FFFFFF;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
